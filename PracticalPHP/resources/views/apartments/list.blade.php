@@ -627,7 +627,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-12">
+        <div class="col-8">
             <div class="row border p-4">
                 @foreach ($apartments as $apartment)
                     <div class="col-4 mb-3">
@@ -650,6 +650,36 @@
                     {{ $apartments->links() }}
                 </div>
             </div>
+        </div>
+        <div class="col-4">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <span class="nav-link text-secondary">Search by Area</span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">District 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">District 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">District 3</a>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link text-secondary">Search by Price</span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#"> &lt; 1.000 $ </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">  1.000-5.000 $ </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">  5.000-10.000 $ </a>
+                </li>
+            </ul>
+        </div>
+    </div>
         </div>
     </div>
 </div>
