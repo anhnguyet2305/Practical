@@ -13,11 +13,11 @@
             *{font-family: 'Nunito', sans-serif;}
         </style>
     </head>
-    <body class="antialiased">
+    <body class="antialiased .container-fluid">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1 class="mt-3">Sweet Home</h1>
+                    <h1 class="mt-3 mb-3">Sweet Home</h1>
                 </div>
             </div>
             <div class="row">
@@ -52,7 +52,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-8">
+                <div class="col-12">
                     <div class="row border p-4">
                         @foreach ($apartments as $apartment)
                            <div class="col-4 mb-3">
@@ -65,7 +65,7 @@
                                             {{ $apartment->general_info }}
                                        </p>
                                        <p>
-                                            Price: {{ number_format($apartment->price) }} $
+                                            giá: {{ number_format($apartment->price) }} $
                                        </p>
                                    </div>
                                </div>
@@ -76,8 +76,6 @@
                         </div>
                     </div>
                 </div>
-{{--                <div class="col-4">--}}
-{{--                </div>--}}
             </div>
         </div>
     </body>
