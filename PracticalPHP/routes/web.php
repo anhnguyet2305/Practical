@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ApartmentsController;
+use App\Models\Apartment;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->action([ ApartmentsController::class, 'index' ]);
 });
+
+Route::resource('apartments', ApartmentsController::class);
